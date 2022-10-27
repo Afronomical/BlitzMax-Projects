@@ -122,14 +122,15 @@ End Function
 Function update_ship()
 	If KeyDown(ship.turnRKey) Then ship.rot:+ship.rotRate
 	If KeyDown(ship.turnLKey) Then ship.rot:-ship.rotRate
-	If KeyDown(ship.thrustKey)
+	If KeyDown(ship.thrustKey) 
 		' as the thrust key is down then apply force to the acc vector
 		ship.acc.x=Cos(ship.rot)*ship.thrust 
 		ship.acc.y=Sin(ship.rot)*ship.thrust
 		
 		ship.vel.x = ship.acc.x + ship.vel.x
 		ship.vel.y = ship.acc.y + ship.vel.y
-		
+		ship.pos.x=ship.pos.x*scale
+		ship.pos.y=ship.pos.y*scale
 	
 		'If Maths ship.vel.x
 		

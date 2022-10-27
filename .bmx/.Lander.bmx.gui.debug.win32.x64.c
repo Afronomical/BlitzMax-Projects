@@ -245,16 +245,16 @@ struct _m__Lander_vector2_obj* _m__Lander_vector2_Create_Tvector2_ii(BBINT bbt_x
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 194, 0};
+	struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 194, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_vect=(struct _m__Lander_vector2_obj*)(struct _m__Lander_vector2_obj*)bbObjectAtomicNew((BBClass *)&_m__Lander_vector2);
-	struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 195, 0};
+	struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 195, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_vect))->__m__lander_vector2_x =((BBFLOAT)bbt_x);
-	struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 196, 0};
+	struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 196, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_vect))->__m__lander_vector2_y =((BBFLOAT)bbt_y);
-	struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 197, 0};
+	struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 197, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbOnDebugLeaveScope();
 	return (struct _m__Lander_vector2_obj*)bbt_vect;
@@ -317,7 +317,7 @@ BBINT _m__Lander_update_ship(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 123, 0};
+	struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 123, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	if(brl_polledinput_KeyDown(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_turnrkey )!=0){
 		struct BBDebugScope __scope = {
@@ -328,12 +328,12 @@ BBINT _m__Lander_update_ship(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 123, 0};
+		struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 123, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_rot +=((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_rotrate ;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 124, 0};
+	struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 124, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	if(brl_polledinput_KeyDown(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_turnlkey )!=0){
 		struct BBDebugScope __scope = {
@@ -344,12 +344,12 @@ BBINT _m__Lander_update_ship(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 124, 0};
+		struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 124, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_rot -=((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_rotrate ;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 125, 0};
+	struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 125, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(brl_polledinput_KeyDown(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_thrustkey )!=0){
 		struct BBDebugScope __scope = {
@@ -360,16 +360,16 @@ BBINT _m__Lander_update_ship(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 127, 0};
+		struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 127, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_acc ))->__m__lander_vector2_x =((BBFLOAT)(bbCos((double)((BBDOUBLE)((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_rot ))*((BBDOUBLE)((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_thrust )));
-		struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 128, 0};
+		struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 128, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_acc ))->__m__lander_vector2_y =((BBFLOAT)(bbSin((double)((BBDOUBLE)((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_rot ))*((BBDOUBLE)((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_thrust )));
-		struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 130, 0};
+		struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 130, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel ))->__m__lander_vector2_x =(((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_acc ))->__m__lander_vector2_x +((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel ))->__m__lander_vector2_x );
-		struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 131, 0};
+		struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 131, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel ))->__m__lander_vector2_y =(((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_acc ))->__m__lander_vector2_y +((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel ))->__m__lander_vector2_y );
 		bbOnDebugLeaveScope();
@@ -382,24 +382,24 @@ BBINT _m__Lander_update_ship(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 138, 0};
+		struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 138, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_acc ))->__m__lander_vector2_x =0.000000000f;
-		struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 139, 0};
+		struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 139, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_acc ))->__m__lander_vector2_y =0.000000000f;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 142, 0};
+	struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 142, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel ))->__m__lander_vector2_y =(((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel ))->__m__lander_vector2_y +_m__Lander_gravity);
-	struct BBDebugStm __stmt_4 = {0x5507737ba0c83db9, 145, 0};
+	struct BBDebugStm __stmt_4 = {0x94577888e95feaca, 145, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_x =(((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel ))->__m__lander_vector2_x +((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_x );
-	struct BBDebugStm __stmt_5 = {0x5507737ba0c83db9, 146, 0};
+	struct BBDebugStm __stmt_5 = {0x94577888e95feaca, 146, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_y =(((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel ))->__m__lander_vector2_y +((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_y );
-	struct BBDebugStm __stmt_6 = {0x5507737ba0c83db9, 169, 0};
+	struct BBDebugStm __stmt_6 = {0x94577888e95feaca, 169, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	if(((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_y >((BBFLOAT)brl_graphics_GraphicsHeight())){
 		struct BBDebugScope __scope = {
@@ -410,22 +410,22 @@ BBINT _m__Lander_update_ship(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 171, 0};
+		struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 171, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_x =((BBFLOAT)(brl_graphics_GraphicsWidth()/2));
-		struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 172, 0};
+		struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 172, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_y =(((BBFLOAT)brl_graphics_GraphicsHeight())*0.2f);
-		struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 173, 0};
+		struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 173, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_acc ))->__m__lander_vector2_x =0.000000000f;
-		struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 174, 0};
+		struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 174, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_acc ))->__m__lander_vector2_y =0.000000000f;
-		struct BBDebugStm __stmt_4 = {0x5507737ba0c83db9, 175, 0};
+		struct BBDebugStm __stmt_4 = {0x94577888e95feaca, 175, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel ))->__m__lander_vector2_x =0.000000000f;
-		struct BBDebugStm __stmt_5 = {0x5507737ba0c83db9, 176, 0};
+		struct BBDebugStm __stmt_5 = {0x94577888e95feaca, 176, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel ))->__m__lander_vector2_y =0.000000000f;
 		bbOnDebugLeaveScope();
@@ -461,16 +461,16 @@ struct _m__Lander_vector2_obj* _m__Lander_transform_scale(struct _m__Lander_vect
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 98, 0};
+	struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 98, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_rv=(struct _m__Lander_vector2_obj*)(struct _m__Lander_vector2_obj*)bbObjectAtomicNew((BBClass *)&_m__Lander_vector2);
-	struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 100, 0};
+	struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 100, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_rv))->__m__lander_vector2_x =(((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p))->__m__lander_vector2_x *bbt_scale);
-	struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 101, 0};
+	struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 101, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_rv))->__m__lander_vector2_y =(((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p))->__m__lander_vector2_y *bbt_scale);
-	struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 102, 0};
+	struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 102, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbOnDebugLeaveScope();
 	return (struct _m__Lander_vector2_obj*)bbt_rv;
@@ -503,16 +503,16 @@ struct _m__Lander_vector2_obj* _m__Lander_transform_rotate(struct _m__Lander_vec
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 106, 0};
+	struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 106, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_rv=(struct _m__Lander_vector2_obj*)(struct _m__Lander_vector2_obj*)bbObjectAtomicNew((BBClass *)&_m__Lander_vector2);
-	struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 108, 0};
+	struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 108, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_rv))->__m__lander_vector2_x =((BBFLOAT)((((BBDOUBLE)((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p))->__m__lander_vector2_x )*bbCos((double)((BBDOUBLE)bbt_rot)))-(((BBDOUBLE)((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p))->__m__lander_vector2_y )*bbSin((double)((BBDOUBLE)bbt_rot)))));
-	struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 109, 0};
+	struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 109, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_rv))->__m__lander_vector2_y =((BBFLOAT)((((BBDOUBLE)((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p))->__m__lander_vector2_x )*bbSin((double)((BBDOUBLE)bbt_rot)))+(((BBDOUBLE)((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p))->__m__lander_vector2_y )*bbCos((double)((BBDOUBLE)bbt_rot)))));
-	struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 110, 0};
+	struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 110, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbOnDebugLeaveScope();
 	return (struct _m__Lander_vector2_obj*)bbt_rv;
@@ -539,16 +539,16 @@ struct _m__Lander_vector2_obj* _m__Lander_transform_position(struct _m__Lander_v
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 115, 0};
+	struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 115, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_rv=(struct _m__Lander_vector2_obj*)(struct _m__Lander_vector2_obj*)bbObjectAtomicNew((BBClass *)&_m__Lander_vector2);
-	struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 116, 0};
+	struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 116, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_rv))->__m__lander_vector2_x =(((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p))->__m__lander_vector2_x +((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_x );
-	struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 117, 0};
+	struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 117, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_rv))->__m__lander_vector2_y =(((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p))->__m__lander_vector2_y +((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_y );
-	struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 118, 0};
+	struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 118, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbOnDebugLeaveScope();
 	return (struct _m__Lander_vector2_obj*)bbt_rv;
@@ -594,19 +594,19 @@ BBINT _m__Lander_draw_shape(struct brl_linkedlist_TList_obj* bbt_shape,BBINT bbt
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 77, 0};
+	struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 77, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	brl_max2d_SetColor(134,134,134);
-	struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 78, 0};
+	struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 78, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	brl_max2d_SetLineWidth(2.00000000f);
-	struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 79, 0};
+	struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 79, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_p1=(struct _m__Lander_vector2_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 80, 0};
+	struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 80, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_p2=(struct _m__Lander_vector2_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_4 = {0x5507737ba0c83db9, 81, 0};
+	struct BBDebugStm __stmt_4 = {0x94577888e95feaca, 81, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	struct brl_linkedlist_TListEnum_obj* bbt_=(struct brl_linkedlist_TListEnum_obj*)((struct brl_linkedlist_TList_obj*)bbNullObjectTest(bbt_shape))->clas->m_ObjectEnumerator((struct brl_linkedlist_TList_obj*)bbt_shape);
 	while(((struct brl_linkedlist_TListEnum_obj*)bbNullObjectTest(bbt_))->clas->m_HasNext((struct brl_linkedlist_TListEnum_obj*)bbt_)!=0){
@@ -630,19 +630,19 @@ BBINT _m__Lander_draw_shape(struct brl_linkedlist_TList_obj* bbt_shape,BBINT bbt
 			bbOnDebugLeaveScope();
 			continue;
 		}
-		struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 84, 0};
+		struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 84, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_p1=(struct _m__Lander_vector2_obj*)bbt_vert;
-		struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 85, 0};
+		struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 85, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_p1=(struct _m__Lander_vector2_obj*)_m__Lander_transform_scale((struct _m__Lander_vector2_obj*)bbt_p1,((BBFLOAT)bbt_scale));
-		struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 86, 0};
+		struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 86, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_p1=(struct _m__Lander_vector2_obj*)_m__Lander_transform_rotate((struct _m__Lander_vector2_obj*)bbt_p1,((BBFLOAT)bbt_rot));
-		struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 87, 0};
+		struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 87, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		bbt_p1=(struct _m__Lander_vector2_obj*)_m__Lander_transform_position((struct _m__Lander_vector2_obj*)bbt_p1);
-		struct BBDebugStm __stmt_4 = {0x5507737ba0c83db9, 88, 0};
+		struct BBDebugStm __stmt_4 = {0x94577888e95feaca, 88, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		if(bbt_p2!=&bbNullObject){
 			struct BBDebugScope __scope = {
@@ -653,12 +653,12 @@ BBINT _m__Lander_draw_shape(struct brl_linkedlist_TList_obj* bbt_shape,BBINT bbt
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 90, 0};
+			struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 90, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			brl_max2d_DrawLine(((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p1))->__m__lander_vector2_x ,((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p1))->__m__lander_vector2_y ,((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p2))->__m__lander_vector2_x ,((struct _m__Lander_vector2_obj*)bbNullObjectTest(bbt_p2))->__m__lander_vector2_y ,1);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_5 = {0x5507737ba0c83db9, 92, 0};
+		struct BBDebugStm __stmt_5 = {0x94577888e95feaca, 92, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		bbt_p2=(struct _m__Lander_vector2_obj*)bbt_p1;
 		bbOnDebugLeaveScope();
@@ -723,9 +723,9 @@ int _bb_main(){
 		__bb_pub_xmmintrin_xmmintrin();
 		bbObjectRegisterType((BBCLASS)&_m__Lander_player);
 		bbObjectRegisterType((BBCLASS)&_m__Lander_vector2);
-		bbRegisterSource(0x1dde7dd4dd90a98c, "C:/Users/6euleo45/Downloads/BlitzMax_win32_x64_0.129.3.45/BlitzMax/mod/brl.mod/collections.mod/list.bmx");
-		bbRegisterSource(0x5507737ba0c83db9, "C:/Users/6euleo45/Documents/GitHub/BlitzMax-Projects/.Lander.bmx");
-		bbRegisterSource(0xc9a0ce1faf9cb800, "C:/Users/6euleo45/Downloads/BlitzMax_win32_x64_0.129.3.45/BlitzMax/mod/brl.mod/collections.mod/sort.bmx");
+		bbRegisterSource(0x351c27723b0f696e, "C:/Users/6euleo45/OneDrive - Solent University/Documents/GitHub/Solent-Maths-for-Programming/BlitzMax_win32_x64_0.129.3.45/BlitzMax/mod/brl.mod/collections.mod/sort.bmx");
+		bbRegisterSource(0x85d2d5f78143b5a3, "C:/Users/6euleo45/OneDrive - Solent University/Documents/GitHub/Solent-Maths-for-Programming/BlitzMax_win32_x64_0.129.3.45/BlitzMax/mod/brl.mod/collections.mod/list.bmx");
+		bbRegisterSource(0x94577888e95feaca, "C:/Users/6euleo45/OneDrive - Solent University/Documents/GitHub/Blitzmax Ps/BlitzMax-Projects/.Lander.bmx");
 		struct BBDebugScope_3 __scope = {
 			BBDEBUGSCOPE_FUNCTION,
 			".Lander",
@@ -752,85 +752,85 @@ int _bb_main(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 4, 0};
+		struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 4, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_graphics_Graphics(1500,900,0,60,0,-1,-1);
-		struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 12, 0};
+		struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 12, 0};
 		bbOnDebugEnterStm(&__stmt_1);
-		struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 13, 0};
+		struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 13, 0};
 		bbOnDebugEnterStm(&__stmt_2);
-		struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 17, 0};
+		struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 17, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		_m__Lander_ship=(struct _m__Lander_player_obj*)(struct _m__Lander_player_obj*)bbObjectNew((BBClass *)&_m__Lander_player);
-		struct BBDebugStm __stmt_4 = {0x5507737ba0c83db9, 18, 0};
+		struct BBDebugStm __stmt_4 = {0x94577888e95feaca, 18, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos =(struct _m__Lander_vector2_obj*)(struct _m__Lander_vector2_obj*)bbObjectAtomicNew((BBClass *)&_m__Lander_vector2);
-		struct BBDebugStm __stmt_5 = {0x5507737ba0c83db9, 19, 0};
+		struct BBDebugStm __stmt_5 = {0x94577888e95feaca, 19, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_x =((BBFLOAT)(brl_graphics_GraphicsWidth()/2));
-		struct BBDebugStm __stmt_6 = {0x5507737ba0c83db9, 20, 0};
+		struct BBDebugStm __stmt_6 = {0x94577888e95feaca, 20, 0};
 		bbOnDebugEnterStm(&__stmt_6);
 		((struct _m__Lander_vector2_obj*)bbNullObjectTest(((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_pos ))->__m__lander_vector2_y =(((BBFLOAT)brl_graphics_GraphicsHeight())*0.2f);
-		struct BBDebugStm __stmt_7 = {0x5507737ba0c83db9, 21, 0};
+		struct BBDebugStm __stmt_7 = {0x94577888e95feaca, 21, 0};
 		bbOnDebugEnterStm(&__stmt_7);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_vel =(struct _m__Lander_vector2_obj*)(struct _m__Lander_vector2_obj*)bbObjectAtomicNew((BBClass *)&_m__Lander_vector2);
-		struct BBDebugStm __stmt_8 = {0x5507737ba0c83db9, 22, 0};
+		struct BBDebugStm __stmt_8 = {0x94577888e95feaca, 22, 0};
 		bbOnDebugEnterStm(&__stmt_8);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_acc =(struct _m__Lander_vector2_obj*)(struct _m__Lander_vector2_obj*)bbObjectAtomicNew((BBClass *)&_m__Lander_vector2);
-		struct BBDebugStm __stmt_9 = {0x5507737ba0c83db9, 23, 0};
+		struct BBDebugStm __stmt_9 = {0x94577888e95feaca, 23, 0};
 		bbOnDebugEnterStm(&__stmt_9);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_thrust =0.2f;
-		struct BBDebugStm __stmt_10 = {0x5507737ba0c83db9, 24, 0};
+		struct BBDebugStm __stmt_10 = {0x94577888e95feaca, 24, 0};
 		bbOnDebugEnterStm(&__stmt_10);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_rad =5.00000000f;
-		struct BBDebugStm __stmt_11 = {0x5507737ba0c83db9, 25, 0};
+		struct BBDebugStm __stmt_11 = {0x94577888e95feaca, 25, 0};
 		bbOnDebugEnterStm(&__stmt_11);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_rot =270.000000f;
-		struct BBDebugStm __stmt_12 = {0x5507737ba0c83db9, 26, 0};
+		struct BBDebugStm __stmt_12 = {0x94577888e95feaca, 26, 0};
 		bbOnDebugEnterStm(&__stmt_12);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_rotrate =2.00000000f;
-		struct BBDebugStm __stmt_13 = {0x5507737ba0c83db9, 27, 0};
+		struct BBDebugStm __stmt_13 = {0x94577888e95feaca, 27, 0};
 		bbOnDebugEnterStm(&__stmt_13);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_scale =4.00000000f;
-		struct BBDebugStm __stmt_14 = {0x5507737ba0c83db9, 28, 0};
+		struct BBDebugStm __stmt_14 = {0x94577888e95feaca, 28, 0};
 		bbOnDebugEnterStm(&__stmt_14);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_turnrkey =39;
-		struct BBDebugStm __stmt_15 = {0x5507737ba0c83db9, 29, 0};
+		struct BBDebugStm __stmt_15 = {0x94577888e95feaca, 29, 0};
 		bbOnDebugEnterStm(&__stmt_15);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_turnlkey =37;
-		struct BBDebugStm __stmt_16 = {0x5507737ba0c83db9, 30, 0};
+		struct BBDebugStm __stmt_16 = {0x94577888e95feaca, 30, 0};
 		bbOnDebugEnterStm(&__stmt_16);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_firekey =32;
-		struct BBDebugStm __stmt_17 = {0x5507737ba0c83db9, 31, 0};
+		struct BBDebugStm __stmt_17 = {0x94577888e95feaca, 31, 0};
 		bbOnDebugEnterStm(&__stmt_17);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_thrustkey =38;
-		struct BBDebugStm __stmt_18 = {0x5507737ba0c83db9, 34, 0};
+		struct BBDebugStm __stmt_18 = {0x94577888e95feaca, 34, 0};
 		bbOnDebugEnterStm(&__stmt_18);
 		((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_verts =(struct brl_linkedlist_TList_obj*)(struct brl_linkedlist_TList_obj*)bbObjectNew((BBClass *)&brl_linkedlist_TList);
-		struct BBDebugStm __stmt_19 = {0x5507737ba0c83db9, 36, 0};
+		struct BBDebugStm __stmt_19 = {0x94577888e95feaca, 36, 0};
 		bbOnDebugEnterStm(&__stmt_19);
 		struct brl_linkedlist_TList_obj* bbt_;
 		(((struct brl_linkedlist_TList_obj*)((struct brl_linkedlist_TList_obj*)bbNullObjectTest((bbt_ = ((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_verts ))))->clas)->m_AddLast_TObject((struct brl_linkedlist_TList_obj*)bbt_,(BBOBJECT)_m__Lander_vector2_Create_Tvector2_ii(4,0));
-		struct BBDebugStm __stmt_20 = {0x5507737ba0c83db9, 37, 0};
+		struct BBDebugStm __stmt_20 = {0x94577888e95feaca, 37, 0};
 		bbOnDebugEnterStm(&__stmt_20);
 		struct brl_linkedlist_TList_obj* bbt_2;
 		(((struct brl_linkedlist_TList_obj*)((struct brl_linkedlist_TList_obj*)bbNullObjectTest((bbt_2 = ((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_verts ))))->clas)->m_AddLast_TObject((struct brl_linkedlist_TList_obj*)bbt_2,(BBOBJECT)_m__Lander_vector2_Create_Tvector2_ii(-4,3));
-		struct BBDebugStm __stmt_21 = {0x5507737ba0c83db9, 38, 0};
+		struct BBDebugStm __stmt_21 = {0x94577888e95feaca, 38, 0};
 		bbOnDebugEnterStm(&__stmt_21);
 		struct brl_linkedlist_TList_obj* bbt_3;
 		(((struct brl_linkedlist_TList_obj*)((struct brl_linkedlist_TList_obj*)bbNullObjectTest((bbt_3 = ((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_verts ))))->clas)->m_AddLast_TObject((struct brl_linkedlist_TList_obj*)bbt_3,(BBOBJECT)_m__Lander_vector2_Create_Tvector2_ii(-2,0));
-		struct BBDebugStm __stmt_22 = {0x5507737ba0c83db9, 39, 0};
+		struct BBDebugStm __stmt_22 = {0x94577888e95feaca, 39, 0};
 		bbOnDebugEnterStm(&__stmt_22);
 		struct brl_linkedlist_TList_obj* bbt_4;
 		(((struct brl_linkedlist_TList_obj*)((struct brl_linkedlist_TList_obj*)bbNullObjectTest((bbt_4 = ((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_verts ))))->clas)->m_AddLast_TObject((struct brl_linkedlist_TList_obj*)bbt_4,(BBOBJECT)_m__Lander_vector2_Create_Tvector2_ii(-4,-3));
-		struct BBDebugStm __stmt_23 = {0x5507737ba0c83db9, 40, 0};
+		struct BBDebugStm __stmt_23 = {0x94577888e95feaca, 40, 0};
 		bbOnDebugEnterStm(&__stmt_23);
 		struct brl_linkedlist_TList_obj* bbt_5;
 		(((struct brl_linkedlist_TList_obj*)((struct brl_linkedlist_TList_obj*)bbNullObjectTest((bbt_5 = ((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_verts ))))->clas)->m_AddLast_TObject((struct brl_linkedlist_TList_obj*)bbt_5,(BBOBJECT)_m__Lander_vector2_Create_Tvector2_ii(4,0));
-		struct BBDebugStm __stmt_24 = {0x5507737ba0c83db9, 46, 0};
+		struct BBDebugStm __stmt_24 = {0x94577888e95feaca, 46, 0};
 		bbOnDebugEnterStm(&__stmt_24);
 		brl_max2d_SetClsColor(11,22,82);
-		struct BBDebugStm __stmt_25 = {0x5507737ba0c83db9, 63, 0};
+		struct BBDebugStm __stmt_25 = {0x94577888e95feaca, 63, 0};
 		bbOnDebugEnterStm(&__stmt_25);
 		do{
 			struct BBDebugScope __scope = {
@@ -841,30 +841,30 @@ int _bb_main(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {0x5507737ba0c83db9, 48, 0};
+			struct BBDebugStm __stmt_0 = {0x94577888e95feaca, 48, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			brl_max2d_SetBlend(5);
-			struct BBDebugStm __stmt_1 = {0x5507737ba0c83db9, 49, 0};
+			struct BBDebugStm __stmt_1 = {0x94577888e95feaca, 49, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			brl_max2d_SetColor(222,232,222);
-			struct BBDebugStm __stmt_2 = {0x5507737ba0c83db9, 50, 0};
+			struct BBDebugStm __stmt_2 = {0x94577888e95feaca, 50, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			brl_max2d_DrawRect(0.000000000f,0.000000000f,((BBFLOAT)(brl_graphics_GraphicsWidth()-2)),((BBFLOAT)(brl_graphics_GraphicsHeight()-1)));
-			struct BBDebugStm __stmt_3 = {0x5507737ba0c83db9, 51, 0};
+			struct BBDebugStm __stmt_3 = {0x94577888e95feaca, 51, 0};
 			bbOnDebugEnterStm(&__stmt_3);
 			brl_max2d_SetBlend(2);
-			struct BBDebugStm __stmt_4 = {0x5507737ba0c83db9, 54, 0};
+			struct BBDebugStm __stmt_4 = {0x94577888e95feaca, 54, 0};
 			bbOnDebugEnterStm(&__stmt_4);
 			_m__Lander_update_ship();
-			struct BBDebugStm __stmt_5 = {0x5507737ba0c83db9, 56, 0};
+			struct BBDebugStm __stmt_5 = {0x94577888e95feaca, 56, 0};
 			bbOnDebugEnterStm(&__stmt_5);
 			_m__Lander_draw_shape((struct brl_linkedlist_TList_obj*)((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_verts ,((BBINT)((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_scale ),((BBINT)((struct _m__Lander_player_obj*)bbNullObjectTest(_m__Lander_ship))->__m__lander_player_rot ));
-			struct BBDebugStm __stmt_6 = {0x5507737ba0c83db9, 61, 0};
+			struct BBDebugStm __stmt_6 = {0x94577888e95feaca, 61, 0};
 			bbOnDebugEnterStm(&__stmt_6);
 			brl_graphics_Flip(-1);
 			bbOnDebugLeaveScope();
 		}while(!((brl_polledinput_KeyDown(27)!=0) || (brl_polledinput_AppTerminate()!=0)));
-		struct BBDebugStm __stmt_26 = {0x5507737ba0c83db9, 66, 0};
+		struct BBDebugStm __stmt_26 = {0x94577888e95feaca, 66, 0};
 		bbOnDebugEnterStm(&__stmt_26);
 		bbEnd();
 		bbOnDebugLeaveScope();
